@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth/core": "^0.10.0",
     "@headlessui/react": "^1.7.15",
     "@types/jsonwebtoken": "^9.0.2",
     "@types/node": "20.4.4",
