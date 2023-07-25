@@ -19,7 +19,7 @@ const FormField = ({ type, title, state, placeholder, isTextArea, setState } : P
                 placeholder={placeholder}
                 value={state}
                 required
-                className="form_field_input"
+                className="form_field-input"
                 onChange={(e) => setState(e.target.value)}
             />
         ) : (
@@ -28,7 +28,7 @@ const FormField = ({ type, title, state, placeholder, isTextArea, setState } : P
                 placeholder={placeholder}
                 value={state}
                 required
-                className="form_field_input"
+                className="form_field-input"
                 onChange={(e) => setState(e.target.value)}
             /> 
         )}
