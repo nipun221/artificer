@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { NavLinks } from '@/constants';
 import AuthProviders from './AuthProviders';
 import { getCurrentUser } from '@/lib/session';
+import ProfileMenu from './ProfileMenu';
+
 
 const Navbar = async () => {
 
@@ -14,7 +16,7 @@ const Navbar = async () => {
             <Link href="/">
                 <Image src="/logo.svg" width={115} height={43} alt="Flexibble" />
             </Link>
-            <ul className='xl:flex text-small gap-7'>
+            <ul className='xl:flex hidden text-small gap-7'>
                 {NavLinks.map((link) => (
                     <Link href={link.href} key={link.key}>
                         {link.text}
@@ -26,15 +28,7 @@ const Navbar = async () => {
         <div className='flex-center gap-4'>
             {session?.user ? (
                 <>
-                    {session?.user?.image && (
-                        <Image 
-                            src={session.user.image}
-                            width={40}
-                            height={40}
-                            className='rounded-full'
-                            alt={session.user.name}
-                        />
-                    )}
+                    <ProfileMenu session={session} />
                     
                     <Link href="/create-project">
                         Share Work
