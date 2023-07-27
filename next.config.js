@@ -4,6 +4,7 @@ const nextConfig = {
         domains: ['lh3.googleusercontent.com', 'res.cloudinary.com']
     },
     experimental: {
+        appDir: true,
         serverComponentsExternalPackages: ['cloudinary', 'graphql-request']
     }
 }
