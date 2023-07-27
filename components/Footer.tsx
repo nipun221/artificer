@@ -22,9 +22,9 @@ const Footer = () => {
         <div className='flex flex-col gap-12 w-full'>
             <div className='flex items-start flex-col'>
                 <Image 
-                    src="/logo-purple.svg"
-                    width={115}
-                    height={38}
+                    src="/logo7.svg"
+                    width={150}
+                    height={50}
                     alt="Flexibble"
                 />
 
@@ -55,10 +55,13 @@ const Footer = () => {
         </div>
 
         <div className='flexBetween footer_copyright'>
-            <p>@ 2023 Flexibble. All rights reserved</p>
-            <p className='text-gray'>
-                <span className='text-black font-semibold'>10,214</span> published works
-            </p>
+            <Link href="https://github.com/nipun221">
+                <p>Folllow my profile @Nipun Vats</p>
+            </Link>
+            <Link href="https://github.com/nipun221/grafbase_pro">
+                <Image src="/github.svg" width={40} height={40} alt='github' />
+                <p>Liked my work? Give it a star</p>
+            </Link>
         </div>
 
     </footer>

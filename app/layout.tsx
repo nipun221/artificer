@@ -3,7 +3,7 @@ import './globals.css';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Flexibble',
+  title: 'Artificer',
   description: 'A place to showcase projects',
 }
 
