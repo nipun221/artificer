@@ -32,12 +32,14 @@ const ProjectForm = ({ type, session, project }: Props) => {
                 await createNewProject(form, session?.user?.id, token);
 
                 router.push('/');
+
             }
 
             if(type==='edit') {
                 await updateProject(form, project?.id as string, token);
 
                 router.push('/');
+
             }
 
         } catch (error) {
