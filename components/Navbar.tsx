@@ -32,7 +32,9 @@ const Navbar = async () => {
                     
                 </>
             ) : (
-                <AuthProviders />
+                <Link href="https://www.instagram.com/v_a_t_s_52/">
+                    <Image src="/instagram2.svg" width={60} height={60} alt='upload' />
+                </Link>
             )}
         </div> 
 
@@ -45,7 +47,7 @@ const Navbar = async () => {
                     </Link>
                 </>
             ) : (
-                <AuthProviders />
+                <AuthProviders/>
             )}
         </div> 
 
